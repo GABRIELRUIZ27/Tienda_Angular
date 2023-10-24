@@ -1,0 +1,19 @@
+<app-header></app-header>
+<div>
+    <h2>Carrito de Compras</h2>
+    <table>
+      <tr>
+        <th>Numero de pedido</th>
+        <th>Articulo</th>
+        <th>Fecha</th>
+        <th>Eliminar</th>
+      </tr>
+      <tr *ngFor="let item of carrito">
+        <td>{{ item.id }}</td>
+        <td>{{ item.articuloDescripcion }}</td>
+        <td>{{ item.fecha}}</td>
+        <td><button (click)="eliminarDelCarrito(item.id)">Cancelar pedido</button></td>
+      </tr>
+    </table>
+  </div>
+  <app-footer></app-footer>

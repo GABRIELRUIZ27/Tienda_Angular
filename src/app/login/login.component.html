@@ -1,0 +1,23 @@
+<div class="center-container">
+  <div class="card-container">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="container">
+      <div class="log-card">
+        <p class="heading">Bienvenido</p>
+        <p>Nos alegra tenerte de vuelta</p>
+
+        <div class="input-group">
+          <p class="text">Correo</p>
+          <br>
+          <input class="input" type="text" [(ngModel)]="correo" placeholder="usuario@correo.com">
+          <p class="text">Contraseña</p>
+          <br>
+          <input class="input" type="password" [(ngModel)]="contrasena" placeholder="Ingresa tu contraseña">
+        </div>
+        <br>
+        <button class="btn" (click)="IniciarSesion()">Iniciar sesión</button>
+      </div>
+    </div>
+  </div>
+</div>

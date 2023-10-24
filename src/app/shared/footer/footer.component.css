@@ -1,0 +1,26 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a7a7a7; 
+    padding: 10px 20px; 
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+  }
+  
+  .footer .left {
+    color: black; 
+  }
+  
+  .footer .right button {
+    background-color: red; 
+    color: white; 
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin-right: 30px;
+  }
+  
+  /* Otros estilos específicos de tu footer si los tienes */
+  

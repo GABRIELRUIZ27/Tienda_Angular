@@ -1,0 +1,29 @@
+<app-header></app-header>
+
+<!-- Sección de detalles del artículo -->
+<div class="row">
+  <div class="card-container">
+    <div class="col-md-4" *ngFor="let item of articulos">
+      <div class="card" style="height: 350px;">
+        <div class="card-img">
+          <div class="img" style="padding-bottom: 0px; height: 140px;">
+            <img [src]="item.imagen" alt="Imagen del artículo">
+          </div>
+        </div>
+        <div class="card-title">{{ item.descripcion }}</div>
+        <div class="card-subtitle">
+          QUEDAN {{ item.stock }} UNIDADES DISPONIBLES.
+        </div>
+        <hr class="card-divider">
+        <div class="card-footer">
+          <div class="card-price"><span>$</span> {{ item.precio }} MXN</div>
+          <button (click)="agregarAlCarrito(item.codigo)" class="agregar-carrito-button">
+            <mat-icon>shopping_cart</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>
